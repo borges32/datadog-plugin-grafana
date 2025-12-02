@@ -37,7 +37,7 @@ This project consists of two main components:
 ```
 datadog-plugin-grafana/
 ├── plugin/
-│   └── opensource-datadogplugingrafana-datasource/
+│   └── opensource-datadog-plugin-grafana-datasource/
 │       ├── src/                      # Frontend TypeScript/React code
 │       │   ├── components/
 │       │   │   ├── ConfigEditor.tsx  # Datasource configuration UI
@@ -79,7 +79,7 @@ go install github.com/magefile/mage@latest
 ### Build the Plugin
 
 ```bash
-cd plugin/opensource-datadogplugingrafana-datasource
+cd plugin/opensource-datadog-plugin-grafana-datasource
 npm install
 npm run build
 ```
@@ -91,7 +91,7 @@ This will:
 ### Run Grafana with Docker
 
 ```bash
-cd plugin/opensource-datadogplugingrafana-datasource
+cd plugin/opensource-datadog-plugin-grafana-datasource
 docker compose up -d
 ```
 
@@ -108,7 +108,7 @@ The plugin is automatically mounted when using the provided `docker-compose.yaml
 1. Build the plugin (see Quick Start)
 2. Copy the `dist/` folder to your Grafana plugins directory:
    ```bash
-   cp -r dist /var/lib/grafana/plugins/opensource-datadogplugingrafana-datasource
+   cp -r dist /var/lib/grafana/plugins/opensource-datadog-datasource
    ```
 3. Restart Grafana
 4. Enable the plugin in Grafana settings (if required)
@@ -165,7 +165,7 @@ The time range is automatically taken from the Grafana dashboard.
 ### Frontend Development (Hot Reload)
 
 ```bash
-cd plugin/opensource-datadogplugingrafana-datasource
+cd plugin/opensource-datadog-plugin-grafana-datasource
 npm run dev
 ```
 

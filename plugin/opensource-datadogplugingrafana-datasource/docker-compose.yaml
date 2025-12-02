@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
   grafana:
-    container_name: 'opensource-datadogplugingrafana-datasource'
+    container_name: 'opensource-datadog-datasource'
     platform: 'linux/amd64'
     build:
       context: ./.config
@@ -12,5 +12,5 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/opensource-datadogplugingrafana-datasource
+      - ./dist:/var/lib/grafana/plugins/opensource-datadog-datasource
       - ./provisioning:/etc/grafana/provisioning

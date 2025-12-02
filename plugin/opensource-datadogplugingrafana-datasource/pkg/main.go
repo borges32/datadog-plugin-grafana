@@ -13,7 +13,7 @@ func main() {
 	// it won't finish until Grafana shuts down the process or the plugin choose
 	// to exit by itself using os.Exit. Manage automatically manages life cycle
 	// of datasource instances.
-	if err := datasource.Manage("opensource-datadogplugingrafana-datasource", plugin.NewDatasource, datasource.ManageOpts{}); err != nil {
+	if err := datasource.Manage("opensource-datadog-datasource", plugin.NewDatasource, datasource.ManageOpts{}); err != nil {
 		log.DefaultLogger.Error(err.Error())
 		os.Exit(1)
 	}
