@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="PluginLogo">
+        <path id="GrafanaFlame" d="M256 44C256 44 120 150 120 278C120 366.366 191.634 438 280 438C368.366 438 440 366.366 440 278C440 220 410 180 380 150" stroke="#F05A28" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="GrafanaFlameInner" d="M280 438C210 438 160 380 160 290C160 220 210 160 256 120" stroke="#F05A28" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <g id="DatadogElement" transform="translate(230, 230)">
+            <path d="M0 20C0 8.9543 8.95431 0 20 0H120C131.046 0 140 8.95431 140 20V80C140 91.0457 131.046 100 120 100H80L40 140V100H20C8.95431 100 0 91.0457 0 80V20Z" fill="#632CA6"/>
+            <circle cx="50" cy="50" r="15" fill="white"/>
+        </g>
+    </g>
+    
+    </svg>
